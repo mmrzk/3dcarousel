@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: lightgrey;
+}
+#carousel {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 300px;
+	height: 50px;
+	perspective: 200px;
+}
+#carousel img {
+	width: 300px;
+	height: 180px;
+	object-fit: cover;
+	position: absolute;
+	left: 0;
+}
+#btn {
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: -30px;
+	left: 10px;
+}
+#btn li {
+	list-style: none;
+	width: 9px;
+	height: 9px;
+	float: left;
+	margin-right: 2rem;
+	background-color: black;
+	border-radius: 50%;
+	transition: background-color 0.5s;
+}
+
+#btn li:hover {
+	background-color: green;
+	cursor: pointer;
+}
+
+#btn li.highlight {
+	background-color: green;
+}
